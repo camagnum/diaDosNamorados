@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosso Amor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+  <link rel="stylesheet" href="./assets/styles/responsive.css">
+</head>
+
+<body>
+  <!-- Barra de Navegação -->
+  <nav class="top-menu">
+    <!-- <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#contador">Contador</a></li>
+        <li><a href="#timeline">Linha do Tempo</a></li>
+        <li><a href="#atividades">Nossas Atividades</a></li>
+        <li><a href="#mapa">Mapa</a></li>
+        
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#polaroids">Polaroid</a></li>
+
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#cartinhas">Cartinhas</a></li>
+        <li><a href="#carta">Carta</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#memorias">Jogo</a></li>
+        
+        <li><a href="#final">Final</a></li>
+      </ul> -->
+
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li class="dropdown">
+        <a href="#">Nossa História</a>
+        <ul class="dropdown-content">
+          <li><a href="#contador">Contador</a></li>
+          <li><a href="#timeline">Linha do Tempo</a></li>
+          <li><a href="#atividades">Nossas Atividades</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Momentos Especiais</a>
+        <ul class="dropdown-content">
+          <li><a href="#polaroids">Polaroid</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Cartas E Palavras</a>
+        <ul class="dropdown-content">
+          <li><a href="#mapa">Mapa</a></li>
+          <li><a href="#cartinhas">Cartinhas</a></li>
+          <li><a href="#carta">Carta</a></li>
+          <li><a href="#depoimentos">Avaliações</a></li>
+        </ul>
+      </li>
+      <!-- <li class="dropdown"> -->
+      <!-- <a href="#">Interações</a> -->
+      <!-- <ul class="dropdown-content"> -->
+      <!-- <li><a href="#quiz">Quiz</a></li> -->
+      <!-- <li><a href="#memorias">Jogo</a></li>
+            <li><a href="#quemmais">Quem é mais provável</a></li> -->
+      <!-- </ul> -->
+      <!-- </li> -->
+      <li><a href="#final">Final</a></li>
+    </ul>
+  </nav>
+
+  <!-- Música de fundo -->
+  <audio autoplay loop hidden id="background-audio">
+    <source src="./assets/audio/caju.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
+
+  <!-- Botão de controle de som -->
+  <button id="audio-toggle" class="audio-toggle">
+    <i id="icon-audio-on" class="fas fa-volume-up"></i>
+    <i id="icon-audio-off" class="fas fa-volume-mute hidden"></i>
+  </button>
+
+  <!-- Página Inicial -->
+  <section id="pagina-inicial" class="section-white">
+    <h1 class="title">Bem-vinda, Amor ❤️</h1>
+    <p class="intro">Este site é só pra você. Aqui estão nossos momentos, nossos risos, e tudo que construímos juntos.
+      Te amo!</p>
+    <a href="#contador" class="btn btn-blue">Começar nossa história</a>
+  </section>
+
+  <!-- Contador de tempo -->
+  <section id="contador" class="section-blue">
+    <h2>Felizes há:</h2>
+    <div id="tempo">
+      <p id="mostrador-contador">Carregando...</p>
+    </div>
+    <a href="#timeline" class="btn btn-white">Ver nossa linha do tempo</a>
+  </section>
+
+  <!-- Linha do Tempo -->
+  <section id="timeline" class="section-white">
+    <h2 class="section-title">Nossa Linha do Tempo</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>🌟 27/01/2024 – Quando tudo começou</h3>
+        <p>Nos conhecemos e algo já dizia que seríamos grandes...</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>🌟 30/01/2024 – Primeiro filme together</h3>
+        <p>2ª vez em 4 dias e a vontade de te ver só aumentava</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>💌 04/04/2024 – Nosso primeiro "eu te amo"</h3>
+        <p>Um momento que ficou guardado no meu coração pra sempre</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>💍 10/06/2024 - Rotulação oficial como namoro</h3>
+        <p>Um show extremamente <em>tranquilo</em> </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>🎉 12/06/2024 – Primeiro Dia dos Namorados</h3>
+        <p>Nosso jantar especial e uma note que nunca esqueço</p>
+      </div>
+    </div>
+    <a href="#atividades" class="btn btn-blue">Ver o que já vivemos</a>
+  </section>
+
+  <!-- Atividades juntos -->
+  <section id="atividades" class="section-blue">
+    <h2 class="section-title">Nossas Aventuras Juntos 📊</h2>
+    <ul>
+      <li class="atividade-item">🎬 Filmes assistidos juntos: <strong>27</strong></li>
+      <li class="atividade-item">✈️ Viagens feitas: <strong>5</strong></li>
+      <li class="atividade-item">🏠 Casas que já moramos: <strong>2</strong></li>
+      <li class="atividade-item">🍿 Idas ao cinema: <strong>12</strong></li>
+      <li class="atividade-item">📺 Séries completas: <strong>3</strong></li>
+    </ul>
+    <a href="#polaroids" class="btn btn-white">Ver nossos momentos especiais</a>
+  </section>
+
+  <!-- Galeria Polaroid -->
+  <section id="polaroids" class="section-white polaroid-carousel">
+    <h2 class="section-title">Momentos Estilo Polaroid 📸</h2>
+    <div class="polaroid-gallery">
+      <div class="polaroid">
+        <img src="./assets/img/nenis0.jpeg" alt="Nossa primeira foto" />
+        <p class="caption">Nossa primeira foto</p>
+      </div>
+      <div class="polaroid">
+        <img src="./assets/img/nenis11.jpeg" alt="Primeira vez no RJ" />
+        <p class="caption">Primeira vez no RJ together</p>
+      </div>
+      <div class="polaroid">
+        <img src="./assets/img/nenis12.jpeg" alt="Bodas de algodão-doce" />
+        <p class="caption">Nossos 3 meses</p>
+      </div>
+      <div class="polaroid">
+        <img src="./assets/img/nenis17.jpeg" alt="Primeiro Dia dos Namorados" />
+        <p class="caption">Primeiro Dia dos Namorados. Dia muito especial!</p>
+      </div>
+      <div class="polaroid">
+        <img src="./assets/img/nenis22.jpeg" alt="Palhacês" />
+        <p class="caption">Bem palhacês</p>
+      </div>
+      <div class="polaroid">
+        <img src="./assets/img/nenis18.jpeg" alt="Jogo no Engenhão" />
+        <p class="caption">Vendo um joguinho</p>
+      </div>
+      <div class="polaroid">
+        <img src="./assets/img/nenis20.jpeg" alt="Show do Vanguart" />
+        <p class="caption">Show do Vanguart debaixo de chuva</p>
+      </div>
+      <div class="polaroid">
+        <img src="./assets/img/nenis15.jpeg" alt="Virada Cultural" />
+        <p class="caption">1ª Virada Cultural</p>
+      </div>
+      <div class="polaroid">
+        <img src="./assets/img/nenis24.jpeg" alt="Show do Bruno Mars" />
+        <p class="caption">Show do Bruno Mars</p>
+      </div>
+      <div class="polaroid">
+        <img src="./assets/img/nenis16.jpeg" alt="Show FBC" />
+        <p class="caption">Show do FBC</p>
+      </div>
+      <div class="polaroid">
+        <img src="./assets/img/nenis21.jpeg" alt="Primeiro niver da Neni" />
+        <p class="caption">Seu primeiro niver together</p>
+      </div>
+      <div class="polaroid">
+        <img src="./assets/img/nenis5.jpeg" alt="Primeira vez em Aracaju" />
+        <p class="caption">Viagem pra Aracaju</p>
+      </div>
+      <div class="polaroid">
+        <img src="./assets/img/nenis13.jpeg" alt="No frio" />
+        <p class="caption">No Frio...</p>
+      </div>
+      <div class="polaroid">
+        <img src="./assets/img/nenis14.jpeg" alt="No calor" />
+        <p class="caption">Ou no calor...</p>
+      </div>
+      <div class="polaroid">
+        <img src="./assets/img/nenis19.jpeg" alt="Objetivo" />
+        <p class="caption">É tudo que quero foreeeeeever</p>
+      </div>
+    </div>
+    <a href="#galeria" class="btn btn-blue">Ver mais fotos</a>
+  </section>
+
+  <!-- Galeria de Fotos -->
+  <section id="galeria" class="section-blue">
+    <h2 class="section-title">Nossas Fotos 💑</h2>
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-inner" id="carousel-images">
+          <img src="./assets/img/nenis1.jpeg" alt="Foto 1" />
+          <img src="./assets/img/nenis2.jpeg" alt="Foto 2" />
+          <img src="./assets/img/nenis3.jpeg" alt="Foto 3" />
+          <img src="./assets/img/nenis4.jpeg" alt="Foto 4" />
+          <img src="./assets/img/nenis6.jpeg" alt="Foto 6" />
+          <img src="./assets/img/nenis7.jpeg" alt="Foto 7" />
+          <img src="./assets/img/nenis8.jpeg" alt="Foto 8" />
+          <img src="./assets/img/nenis9.jpeg" alt="Foto 9" />
+          <img src="./assets/img/nenis10.jpeg" alt="Foto 10" />
+          <img src="./assets/img/nenis23.jpeg" alt="Foto 23" />
+          <img src="./assets/img/nenis25.jpeg" alt="Foto 25" />
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button onclick="moveCarousel(-1)">&larr;</button>
+        <button onclick="moveCarousel(1)">&rarr;</button>
+      </div>
+    </div>
+    <a href="#mapa" class="btn btn-white">Ver nosso mapa</a>
+  </section>
+
+  <!-- Quiz Romântico -->
+  <!-- <section id="quiz" class="section">
+      <h2 class="section-title">Quiz Romântico</h2>
+      <div id="quiz-container"></div>
+      <p id="quiz-result" class="hidden"></p>
+    </section> -->
+
+  <!-- Jogo de Memórias -->
+  <!-- <section id="memorias" class="section">
+      <h2 class="section-title">Quem é mais provável?</h2>
+      <div id="memorias-jogo" class="quiz-memoria">
+        <p id="pergunta-memoria"></p>
+        <div class="opcoes">
+          <button onclick="responderMemoria('Você')">Você</button>
+          <button onclick="responderMemoria('Ela')">Ela</button>
+        </div>
+        <p id="resposta-memoria"></p>
+      </div>
+    </section> -->
+
+  <!-- Mapa -->
+  <section id="mapa" class="section-white">
+    <h2 class="section-title">Lugares que Visitamos 🌍</h2>
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1HhBJLqj5wABr6hx3sWESEK6cFPaMDfk&ehbc=2E312F&noprof=1"
+      width="100%" height="480"></iframe>
+    <!-- <iframe src="https://www.google.com/maps/d/u/0/edit?mid=1HhBJLqj5wABr6hx3sWESEK6cFPaMDfk&usp=sharing" width="100%" -->
+    <!-- height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+    <a href="#cartinhas" class="btn btn-blue">Veja as cartinhas</a>
+  </section>
+
+  <!-- Cartinhas -->
+  <section id="cartinhas" class="section-blue">
+    <h2 class="section-title">Nossas Coisinhas 💌</h2>
+    <div class="envelopes">
+      <div class="cartinha" onclick="revelarCarta(this)">Clique para abrir ✉️</div>
+      <div class="mensagem hidden">"Vamos ficar sempre TOGETHER!" 💖</div>
+
+      <div class="cartinha" onclick="revelarCarta(this)">Clique para abrir ✉️</div>
+      <div class="mensagem hidden">"I LOVE YOU SO MUUUUUCH!" 💑</div>
+
+      <div class="cartinha" onclick="revelarCarta(this)">Clique para abrir ✉️</div>
+      <div class="mensagem hidden">"Você tá muito pretty!" 🪞</div>
+
+      <div class="cartinha" onclick="revelarCarta(this)">Clique para abrir ✉️</div>
+      <div class="mensagem hidden">"UM PAPAZINHO BEM GOSTOSO DE COMER...🍽️" </div>
+
+      <div class="cartinha" onclick="revelarCarta(this)">Clique para abrir ✉️</div>
+      <div class="mensagem hidden">"O meu neni é lindo, o meu neni é especial...🎵" </div>
+    </div>
+    <a href="#carta" class="btn btn-white">Veja o que sinto por você</a>
+  </section>
+
+  <!-- Carta -->
+  <section id="carta" class="section-white">
+    <h2 class="section-title">Carta Para Você 💌</h2>
+    <p class="carta-texto">Desde o dia em que te conheci, minha vida mudou de forma mágica. Cada sorriso seu é meu
+      presente favorito. Amo
+      cada detalhe seu e sou grato por caminhar ao seu lado. Agradeço a Deus por ter colocado uma pessoa tão especial na
+      minha vida. Você é maravilhosa e merece dia após dia tudo de melhor em todas as esferas da sua vida. Espero te
+      fazer feliz 1/12 do que você me faz, que assim você já será a mulher mais feliz do mundo. Te amo, minha vida! ❤️
+    </p>
+    <a href="#depoimentos" class="btn btn-blue">Veja suas avaliações</a>
+  </section>
+
+  <!-- Depoimentos -->
+  <section id="depoimentos" class="section-blue">
+    <h2 class="section-title">Avaliações dos Usuários 💬</h2>
+    <div class="testimonial">
+      <p><strong>Rafaela Pelozi:</strong> Quando comprei, veio com alguns defeitos, e tudo bem. Anos se passaram, usei
+        tanto em
+        momentos de tristeza quanto de alegria, e continua lá: firme, presente, do jeitinho dela. Mesmo com alguns
+        defeitos de fábrica, continuo usando — porque tem coisas que, apesar de não serem perfeitas, são perfeitas pra
+        você.
+        <i class="fas fa-star star"></i>
+        <i class="fas fa-star star"></i>
+        <i class="fas fa-star star"></i>
+        <i class="fas fa-star star"></i>
+        <i class="fas fa-star star"></i>
+      </p>
+      <p><strong>Magnum:</strong> Amor igual a esse não encontro em lugar nenhum. Parece feito sob medida pra mim. Virei
+        cliente assíduo e não largo mais nunca agora. 5 estrelas com certeza!
+        <i class="fas fa-star star"></i>
+        <i class="fas fa-star star"></i>
+        <i class="fas fa-star star"></i>
+        <i class="fas fa-star star"></i>
+        <i class="fas fa-star star"></i>
+        <!-- <i class="far fa-star star"></i>  --><!-- estrela vazia -->
+      </p>
+    </div>
+    <a href="#final" class="btn btn-white">Ir para o final</a>
+  </section>
+
+  <!-- Mensagem Final -->
+  <section id="final" class="section-white">
+    <h2 class="section-title">E isso é só o começo...</h2>
+    <p class="final-message">Obrigado por ser minha parceira, minha melhor amiga, e o amor da minha vida. Que venham
+      muitos outros momentos incríveis ao seu lado. 💖</p>
+    <a href="#" class="btn btn-blue">Voltar para o começo</a>
+  </section>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
