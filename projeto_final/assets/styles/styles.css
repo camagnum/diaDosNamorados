@@ -46,8 +46,17 @@ body {
   background-color: var(--cor-primaria);
   text-align: justify;
   border-radius: 10px;
-  padding: 15px;
+  padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline {
+  max-width: 600px;
+}
+
+.timeline-item {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .atividade-item {
@@ -193,15 +202,6 @@ section {
   /* centraliza horizontalmente */
   padding: 0 20px;
   text-align: center;
-}
-
-.timeline {
-  max-width: 600px;
-  margin: 20px;
-}
-
-.timeline-item {
-  margin-bottom: 30px;
 }
 
 .audio-toggle {
