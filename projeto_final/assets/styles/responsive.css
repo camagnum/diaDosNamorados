@@ -1,0 +1,181 @@
+/* responsive.css */
+
+@media (max-width: 768px) {
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    section {
+        height: 100vh;
+    }
+
+    .top-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.top-menu ul {
+        /* flex-direction: column; */
+        display: none;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav.top-menu ul li {
+        margin: 10px 0;
+    }
+
+    .intro {
+        font-size: 1.1rem;
+    }
+
+    .fullscreen-section {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .dropdown-content a {
+        background-color: var(--cor-fundo);
+        color: var(--cor-primaria);
+        font-weight: bold;
+        padding: 10px;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+/* .polaroid-gallery {
+    max-width: 300px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.polaroid {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 300%;
+}
+
+.polaroid img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    flex-shrink: 0;
+} */
+
+.polaroid-carousel {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.polaroid-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 0;
+}
+
+.polaroid {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    background: white;
+    border: 10px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    transform: rotate(-1deg);
+    transition: transform 0.3s ease;
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.polaroid .caption {
+    margin-top: 8px;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.timeline,
+.testimonials,
+.atividades {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1.5rem;
+}
+
+#memorias .quiz-memoria p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#memorias .quiz-memoria button {
+    width: 90%;
+    font-size: 1rem;
+    margin: 0.5rem auto;
+}
+
+.audio-toggle {
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+}
+
+.hearts-container {
+    pointer-events: none;
+}
+
+/* Maior que 769px */
+@media (min-width: 769px) {
+
+    .timeline,
+    .testimonials,
+    .atividades {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .timeline .event,
+    .testimonial,
+    .atividade-item {
+        flex: 1 1 calc(50% - 20px);
+        margin: 10px;
+    }
+}
